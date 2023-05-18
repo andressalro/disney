@@ -2,7 +2,8 @@ import Express from "express";
 import { AuthMiddleware } from "../middlewares";
 import cors from "cors";
 import helmet from "helmet";
-import { connectDb } from "./db.config";
+import swaggerUi from "swagger-ui-express";
+import { swaggerMiddleware, swaggerSpec } from "./swagger.config";
 
 export class ServerConfig {
   constructor({ port, middlewares, routers }) {
@@ -12,7 +13,9 @@ export class ServerConfig {
     this.registerCORSMiddleware()
       .registerHelmetMiddleware()
       .registerJwtPassportMiddleware()
-      .registerJSONMiddleware();
+      .registerJSONMiddleware()
+      .registerSwaggerMiddleware();
+
     middlewares &&
       middlewares.forEach((elMiddleware) => {
         this.registerMiddleware(elMiddleware);
@@ -96,6 +99,14 @@ export class ServerConfig {
     const passportJwtMiddleware = authMdlw.registerJwtStrategy();
     this.registerMiddleware(passportJwtMiddleware);
     return this;
+  }
+
+  registerSwaggerMiddleware() {
+    this.app.use(
+      "/api-docs",
+      swaggerMiddleware(),
+      swaggerUi.setup(swaggerSpec)
+    );
   }
 
   async listen() {
