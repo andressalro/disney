@@ -1,0 +1,28 @@
+{
+  "name": "disney",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node -r esm .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.9.2",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "sequelize": "^6.31.1",
+    "swagger-ui-express": "^4.6.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
