@@ -6,7 +6,6 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=$MYSQL_PASS
       - MYSQL_DATABASE=$MYSQL_NAME
-      - MYSQL_USER=$MYSQL_USER
     ports:
       - $MYSQL_PORT:3306
     volumes:

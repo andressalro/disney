@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node -r esm .",
+    "db:migrate": "npx sequelize-cli db:migrate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -23,6 +24,7 @@
     "swagger-ui-express": "^4.6.3"
   },
   "devDependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "sequelize-cli": "^6.6.0"
   }
 }
