@@ -30,7 +30,7 @@ Se utilizaron las tecnologías NodeJs Express, Sequelize MySQL, Nodemailer, Swag
 > EMAIL_PORT=587
 
 ### docker compose up --build -d
-Levantará el servicio de NodeJs por el puerto 3000 y el servicio MySQL por el puerto 3307
+Levantará el servicio de NodeJs por el puerto 3000 y el servicio MySQL por el puerto 3307, ejecuta migraciones y seeders
 
 ![image](https://github.com/andressalro/disney/assets/40213377/2c712443-b5f5-46a7-af84-844a5b0522fe)
 
@@ -43,6 +43,9 @@ La ruta de la documentación del API
 Endpoint de registro de usuario
 
 ![image](https://github.com/andressalro/disney/assets/40213377/2fc0700c-da03-4e3f-8e11-13a331728644)
+
+Uso de nodemailer con ayuda de Ethereal
+![image](https://github.com/andressalro/disney/assets/40213377/2272cf2a-8c60-4617-bb88-ae2be1caf4c7)
 
 
 ### /auth/sign-in
