@@ -81,6 +81,35 @@ Endpoint de modificación de personaje
 
 ![image](https://github.com/andressalro/disney/assets/40213377/6290bf58-b85b-4208-b1d8-ece38447527a)
 
+Se consulta este usuario para validar que si se haya modificado:
+
+![image](https://github.com/andressalro/disney/assets/40213377/96a5cb65-f598-42d7-b7e3-07e29f5a9c53)
+
+### /api/v1/character/:id
+
+Endpoint de eliminación soft de personaje
+
+![image](https://github.com/andressalro/disney/assets/40213377/04ffeb45-2203-450e-abce-867311034492)
+
+
+Se valida que no salga en el listado:
+
+![image](https://github.com/andressalro/disney/assets/40213377/91bc04a3-2002-4f45-8e2f-fa4cbe0c83b5)
+
+
+# Notas del desarrollador
+
+Se creó el proyecto paso a paso, se puede reflejar en los commits.
+Se cumplió con los puntos adicionales
+Faltó culminar los puntos de los endpoints de pelicula (falta de tiempo para su culminación)
+Se creó una buena estructura de proyecto para el poco tiempo de desarrollo
+Se usó buenas prácticas de desarrollo
+
+
+### ¡Gracias!
+
+
+
 
 
 
