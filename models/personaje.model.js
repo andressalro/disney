@@ -1,26 +1,33 @@
-import { DataTypes } from "sequelize";
+import { DataTypes, Model } from "sequelize";
 import { sequelize } from "../config/db.config";
-import Pelicula from "../models";
+import Pelicula from "./pelicula.model";
 
-const Personaje = sequelize.define("Personaje", {
-  imagen: {
-    type: DataTypes.STRING,
-  },
-  nombre: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  edad: {
-    type: DataTypes.INTEGER,
-  },
-  peso: {
-    type: DataTypes.DECIMAL(5, 2),
-  },
-  historia: {
-    type: DataTypes.TEXT,
-  },
-});
+class Personaje extends Model {}
 
-Personaje.belongsToMany(Pelicula, { through: "PersonajePelicula" });
+Personaje.init(
+  {
+    imagen: {
+      type: DataTypes.BLOB,
+    },
+    nombre: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    edad: {
+      type: DataTypes.INTEGER,
+    },
+    peso: {
+      type: DataTypes.DECIMAL(5, 2),
+    },
+    historia: {
+      type: DataTypes.TEXT,
+    },
+  },
+  {
+    sequelize,
+    modelName: "Personaje",
+    tableName: "Personajes",
+  }
+);
 
 export default Personaje;

@@ -1,17 +1,23 @@
+import { DataTypes, Model } from "sequelize";
 import { sequelize } from "../config/db.config";
-import { DataTypes } from "sequelize";
-import Pelicula from "../models";
 
-const Genero = sequelize.define("Genero", {
-  nombre: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  imagen: {
-    type: DataTypes.STRING,
-  },
-});
+class Genero extends Model {}
 
-Genero.belongsToMany(Pelicula, { through: "PersonajePelicula" });
+Genero.init(
+  {
+    nombre: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    imagen: {
+      type: DataTypes.BLOB,
+    },
+  },
+  {
+    sequelize,
+    modelName: "Genero",
+    tableName: "Generos",
+  }
+);
 
 export default Genero;
