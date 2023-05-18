@@ -37,7 +37,7 @@ Levantará el servicio de NodeJs por el puerto 3000 y el servicio MySQL por el p
 ### /api-docs
 La ruta de la documentación del API
 
-![image](https://github.com/andressalro/disney/assets/40213377/2b0fbe6d-a534-4615-8a22-a136d1cb3aa9)
+![image](https://github.com/andressalro/disney/assets/40213377/167cc4dd-be0f-4e05-9ce9-e8f044526904)
 
 ### /auth/sign-up
 Endpoint de registro de usuario
@@ -52,51 +52,52 @@ Uso de nodemailer con ayuda de Ethereal
 ### /auth/sign-in
 Endpoint de inicio de sesión de usuario
 
-![image](https://github.com/andressalro/disney/assets/40213377/43e69351-415e-4da5-8460-6d0bc0d9f512)
+![image](https://github.com/andressalro/disney/assets/40213377/1e5eb61a-5dbc-4e81-bd65-5399f1cad7fa)
 
 ### /api/v1/characters
 
 Endpoint de listado de personajes
 
-![image](https://github.com/andressalro/disney/assets/40213377/ccb004f3-7f49-402c-bc52-6703ff7fb378)
+![image](https://github.com/andressalro/disney/assets/40213377/d29c2fc7-45f9-45c4-8a28-e7138caa4e96)
 
 ### /api/v1/character/:id
 
 Endpoint de detalle de personaje
 
-![image](https://github.com/andressalro/disney/assets/40213377/87763f65-8014-4795-819e-bd7a994464ef)
+![image](https://github.com/andressalro/disney/assets/40213377/c56adc7f-8c2c-49c2-bbc1-eabe83345067)
 
 Filtrado name, movie, etc.
-![image](https://github.com/andressalro/disney/assets/40213377/e9066eb1-7103-4794-8d3f-a7136338394f)
+
+![image](https://github.com/andressalro/disney/assets/40213377/ea37a053-1afa-4a81-b877-012ccfec109f)
 
 
 ### /api/v1/character
 
 Endpoint de creación de personaje
 
-![image](https://github.com/andressalro/disney/assets/40213377/4b73e074-ea91-46ef-8d80-a20e4e16339e)
+![image](https://github.com/andressalro/disney/assets/40213377/e82ab469-8184-458c-809c-4b41d593bdab)
 
 ### /api/v1/character/:id
 
 Endpoint de modificación de personaje
 
-![image](https://github.com/andressalro/disney/assets/40213377/6f709ee4-4c78-4d19-8635-cc689f412e23)
+![image](https://github.com/andressalro/disney/assets/40213377/c30e0136-ca9d-4f8c-ac63-c097c0318ca2)
 
 Se consulta este usuario para validar que si se haya modificado:
 
-![image](https://github.com/andressalro/disney/assets/40213377/d6948579-58a0-4d81-832d-e09a5c309bf5)
+![image](https://github.com/andressalro/disney/assets/40213377/f6a327f9-e780-4a90-8685-c3215b6c1616)
 
 
 ### /api/v1/character/:id
 
 Endpoint de eliminación soft de personaje
 
-![image](https://github.com/andressalro/disney/assets/40213377/04ffeb45-2203-450e-abce-867311034492)
+![image](https://github.com/andressalro/disney/assets/40213377/42232831-8960-42a5-8de9-dd1d89a9b70c)
 
 
 Se valida que no salga en el listado:
 
-![image](https://github.com/andressalro/disney/assets/40213377/91bc04a3-2002-4f45-8e2f-fa4cbe0c83b5)
+![image](https://github.com/andressalro/disney/assets/40213377/cb1dbad5-e789-4efe-b199-2796ce33363b)
 
 
 # Notas del desarrollador
