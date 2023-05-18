@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../config/db.config";
-import Personaje from "./personaje.model";
-import Genero from "./genero.model";
+import Personaje from "../models";
+import Genero from "../models";
 
 const Pelicula = sequelize.define("Pelicula", {
   imagen: {

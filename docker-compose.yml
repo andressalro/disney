@@ -2,6 +2,11 @@ version: "3.8"
 services:
   db:
     image: mysql:5.7
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 10s
+      retries: 10
     env_file: ./.env
     environment:
       - MYSQL_ROOT_PASSWORD=$MYSQL_PASS
@@ -15,17 +20,20 @@ services:
       context: .
       dockerfile: Dockerfile
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     env_file: ./.env
     ports:
       - $PORT:3000
     environment:
-      - MYSQL_PORT=$MYSQL_PORT
+      - MYSQL_PORT=3306
       - MYSQL_NAME=$MYSQL_NAME
       - MYSQL_PASS=$MYSQL_PASS
       - MYSQL_USER=$MYSQL_USER
-      - MYSQL_HOST=$MYSQL_HOST
+      - MYSQL_HOST=db
       - PORT=$PORT
       - NODE_ENV=$NODE_ENV
+    command: >
+      bash -c "npx sequelize db:migrate:undo:all && npx sequelize db:migrate &&  npx sequelize db:seed:all && npm start"
 volumes:
   db:

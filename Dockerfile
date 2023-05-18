@@ -1,7 +1,6 @@
-FROM node:18
+FROM node:14
 WORKDIR /disney-app
-COPY package.json .
+COPY package.json package-lock.json ./
 RUN npm install
 COPY . .
-RUN npm run db:migrate
-CMD npm start
+EXPOSE 3000

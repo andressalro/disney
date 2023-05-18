@@ -73,8 +73,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("GeneroPelicula");
-    await queryInterface.dropTable("PersonajePelicula");
     await queryInterface.dropTable("Peliculas");
   },
 };

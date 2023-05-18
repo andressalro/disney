@@ -1,7 +1,8 @@
 import passport from "passport";
 import { Strategy as JwtStrategy, ExtractJwt } from "passport-jwt";
-import { User } from "../models";
+
 import EnvConfig from "../config/env.config";
+import { User } from "../models/user.model";
 
 export default class AuthMiddleware {
   #envConfig;

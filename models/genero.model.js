@@ -1,6 +1,6 @@
 import { sequelize } from "../config/db.config";
 import { DataTypes } from "sequelize";
-import Pelicula from "./pelicula.model";
+import Pelicula from "../models";
 
 const Genero = sequelize.define("Genero", {
   nombre: {
@@ -12,6 +12,6 @@ const Genero = sequelize.define("Genero", {
   },
 });
 
-Personaje.belongsToMany(Pelicula, { through: "PersonajePelicula" });
+Genero.belongsToMany(Pelicula, { through: "PersonajePelicula" });
 
 export default Genero;

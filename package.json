@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node -r esm .",
     "db:migrate": "npx sequelize-cli db:migrate",
+    "db:seed": "npx sequelize-cli db:seed:all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
