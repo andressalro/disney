@@ -1,6 +1,5 @@
 import { DataTypes, Model } from "sequelize";
 import { sequelize } from "../config/db.config";
-import Pelicula from "./pelicula.model";
 
 class Personaje extends Model {}
 
