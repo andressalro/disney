@@ -17,6 +17,7 @@ Genero.init(
     sequelize,
     modelName: "Genero",
     tableName: "Generos",
+    paranoid: true,
   }
 );
 

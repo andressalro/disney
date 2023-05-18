@@ -27,6 +27,7 @@ Personaje.init(
     sequelize,
     modelName: "Personaje",
     tableName: "Personajes",
+    paranoid: true,
   }
 );
 

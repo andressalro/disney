@@ -26,6 +26,10 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE,
       },
+      deletedAt: {
+        type: Sequelize.DATE,
+        allowNull: true,
+      },
     });
     await queryInterface.createTable("PersonajePelicula", {
       personajeId: {
@@ -73,6 +77,8 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
+    await queryInterface.dropTable("GeneroPelicula");
+    await queryInterface.dropTable("PersonajePelicula");
     await queryInterface.dropTable("Peliculas");
   },
 };

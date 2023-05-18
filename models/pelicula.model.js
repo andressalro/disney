@@ -20,6 +20,7 @@ Pelicula.init(
     sequelize,
     modelName: "Pelicula",
     tableName: "Peliculas",
+    paranoid: true,
   }
 );
 export default Pelicula;
