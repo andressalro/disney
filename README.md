@@ -32,20 +32,21 @@ Se utilizaron las tecnologías NodeJs Express, Sequelize MySQL, Nodemailer, Swag
 ### docker compose up --build -d
 Levantará el servicio de NodeJs por el puerto 3000 y el servicio MySQL por el puerto 3307, ejecuta migraciones y seeders
 
-![image](https://github.com/andressalro/disney/assets/40213377/2c712443-b5f5-46a7-af84-844a5b0522fe)
+![image](https://github.com/andressalro/disney/assets/40213377/265cbeb3-9e15-43b6-952a-855440c950a8)
 
 ### /api-docs
 La ruta de la documentación del API
 
-![image](https://github.com/andressalro/disney/assets/40213377/5f262cde-c6bf-487a-b514-dc4593c5dd4f)
+![image](https://github.com/andressalro/disney/assets/40213377/2b0fbe6d-a534-4615-8a22-a136d1cb3aa9)
 
 ### /auth/sign-up
 Endpoint de registro de usuario
 
-![image](https://github.com/andressalro/disney/assets/40213377/2fc0700c-da03-4e3f-8e11-13a331728644)
+![image](https://github.com/andressalro/disney/assets/40213377/395595c1-b9be-42a2-a9fb-ab707f844836)
 
 Uso de nodemailer con ayuda de Ethereal
-![image](https://github.com/andressalro/disney/assets/40213377/2272cf2a-8c60-4617-bb88-ae2be1caf4c7)
+![image](https://github.com/andressalro/disney/assets/40213377/1b376fe0-9554-4782-9a65-0930202c4c73)
+
 
 
 ### /auth/sign-in
@@ -63,27 +64,28 @@ Endpoint de listado de personajes
 
 Endpoint de detalle de personaje
 
-![image](https://github.com/andressalro/disney/assets/40213377/0f3aa1dd-4381-44dd-9d87-04685d2ebd57)
+![image](https://github.com/andressalro/disney/assets/40213377/87763f65-8014-4795-819e-bd7a994464ef)
 
 Filtrado name, movie, etc.
-![image](https://github.com/andressalro/disney/assets/40213377/703aa1ce-964b-487c-a221-02ad250c268a)
+![image](https://github.com/andressalro/disney/assets/40213377/e9066eb1-7103-4794-8d3f-a7136338394f)
 
 
 ### /api/v1/character
 
 Endpoint de creación de personaje
 
-![image](https://github.com/andressalro/disney/assets/40213377/b09b98f4-db4e-4f1a-990c-2d026b377295)
+![image](https://github.com/andressalro/disney/assets/40213377/4b73e074-ea91-46ef-8d80-a20e4e16339e)
 
 ### /api/v1/character/:id
 
 Endpoint de modificación de personaje
 
-![image](https://github.com/andressalro/disney/assets/40213377/6290bf58-b85b-4208-b1d8-ece38447527a)
+![image](https://github.com/andressalro/disney/assets/40213377/6f709ee4-4c78-4d19-8635-cc689f412e23)
 
 Se consulta este usuario para validar que si se haya modificado:
 
-![image](https://github.com/andressalro/disney/assets/40213377/96a5cb65-f598-42d7-b7e3-07e29f5a9c53)
+![image](https://github.com/andressalro/disney/assets/40213377/d6948579-58a0-4d81-832d-e09a5c309bf5)
+
 
 ### /api/v1/character/:id
 
