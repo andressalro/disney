@@ -100,9 +100,13 @@ Se valida que no salga en el listado:
 # Notas del desarrollador
 
 Se creó el proyecto paso a paso, se puede reflejar en los commits.
+
 Se cumplió con los puntos adicionales
+
 Faltó culminar los puntos de los endpoints de pelicula (falta de tiempo para su culminación)
+
 Se creó una buena estructura de proyecto para el poco tiempo de desarrollo
+
 Se usó buenas prácticas de desarrollo
 
 
