@@ -4,6 +4,7 @@ import PasswordService from "./password.service";
 import EnvConfig from "../../config/env.config";
 import User from "../../models/user.model";
 import { errorHandler } from "../../utils/error-handler";
+import { transporter } from "../../config/mail.config";
 
 export default class UserAuthService {
   #passwordService;
@@ -21,7 +22,12 @@ export default class UserAuthService {
 
       usr.credential = hashedPassword;
       const insertUser = await User.create(usr);
-
+      await transporter.sendMail({
+        from: "example1@example.com",
+        to: usr.mail,
+        subject: "Test",
+        text: "mensaje de prueba",
+      });
       return this.generateAccessToken(insertUser.dataValues);
     } catch (error) {
       throw errorHandler(error.message, 400);
