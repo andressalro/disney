@@ -16,6 +16,7 @@ export default class CharactersService {
             model: Pelicula,
             where: filterForeign,
             attributes: selectForeign,
+            required: false,
             through: {
               attributes: [],
             },

@@ -10,7 +10,7 @@ Genero.init(
       allowNull: false,
     },
     imagen: {
-      type: DataTypes.BLOB,
+      type: DataTypes.STRING,
     },
   },
   {
