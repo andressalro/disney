@@ -6,7 +6,7 @@ class Personaje extends Model {}
 Personaje.init(
   {
     imagen: {
-      type: DataTypes.BLOB,
+      type: DataTypes.STRING,
     },
     nombre: {
       type: DataTypes.STRING,
